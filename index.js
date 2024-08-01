@@ -397,7 +397,7 @@ console.log(`Unknown DisconnectReason: ${reason}|${connection}`);
 connectToWhatsApp();
   }
 } else if (connection === "open") {
-  haikal.sendMessage('6282373608217' + "@s.whatsapp.net", { text: `> CaaLiss - BotzV1 Aktif✅` });
+  haikal.sendMessage('6282287486762' + "@s.whatsapp.net", { text: `> CaaLiss - BotzV1 Aktif✅` });
 }
 // console.log('Connected...', update)
 });
