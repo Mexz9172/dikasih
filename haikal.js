@@ -121,7 +121,6 @@ const isOwner = ownerNumber.includes(senderNumber) || isBot
 const isPremium = isOwner ? true : _prem.checkPremiumUser(m.sender, premium)
 const numberQuery = text.replace(new RegExp("[()+-/ +/]", "gi"), "") + "@s.whatsapp.net"
 const mentionByTag = m.mtype == "extendedTextMessage" && m.message.extendedTextMessage.contextInfo != null ? m.message.extendedTextMessage.contextInfo.mentionedJid : []
-const Input = mentionByTag[0] ? mentionByTag[0] : q ? numberQuery : false
 const time = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('HH:mm:ss z')
 const salam = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('a')
 const bii = JSON.parse(fs.readFileSync('./baseikal/dbnye/wihh.json').toString())
